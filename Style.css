@@ -1,0 +1,110 @@
+@media (min-width: 768px) {
+    h1 {
+        font-size: 150px;
+    }
+    
+    p {
+        font-size: 60px;
+    }
+
+    button {
+        height: 70px;
+        width: 200px;
+        font-size: x-large;
+    }
+}
+
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 200px;
+    }
+    
+    p {
+        font-size: 75px;
+    }
+
+    button {
+        height: 80px;
+        width: 250px;
+        font-size: xx-large;
+    }
+}
+
+body{
+  background-image: url('IMG/Bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+   background-attachment: fixed;
+  text-align: center;
+    margin: 0;
+}
+
+h1 {
+    color: gold;
+    font-size: 100px;
+   
+}
+
+p {
+    color:whitesmoke;
+    font-size: 45px;
+    font-style: italic;
+
+}
+
+button{
+    color: #016f32;
+    height: 50px;
+    width: 150px;
+    background: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    font-size: large;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  background: #003e19 url("IMG/logo2.png") no-repeat center center;
+  background-size: 400px;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+  margin-bottom: 100px;
+    margin: 0;
+}
+
+.custom-loader {
+  width: 440px;
+  height: 22px;
+  border-radius: 20px;
+  color: #016f3e;
+  border: 2px solid;
+  position: relative;
+  margin-top: 300px;
+}
+
+.custom-loader::before {
+  content: "";
+  position: absolute;
+  margin: 2px;
+  inset: 0 100% 0 0;
+  border-radius: inherit;
+  background: gold;
+  animation: p6 6s ;
+}
+
+@keyframes p6 {
+  100% {
+    inset: 0
+  }
+}
